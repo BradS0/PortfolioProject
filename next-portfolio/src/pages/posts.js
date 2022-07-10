@@ -1,11 +1,12 @@
-import { Container } from "@chakra-ui/layout"
+import PageLayout from '../components/common/layouts/page';
+import PostsView from '../components/views/posts-view/posts-view';
 
-const Posts = () => {
-    return (
-        <Container>
-            This is where blog posts will go
-        </Container>
-    )
+function Posts() {
+  return (
+    <PageLayout title="Posts">
+      <PostsView />
+    </PageLayout>
+  );
 }
 
-export default Posts
+export default Posts;

@@ -10,7 +10,7 @@
     "eslint:recommended"
   ],
   "rules": {
-    "quotes": ["error", "single"],
+    "quotes": [2, "single", "avoid-escape"],
     "no-empty": "off",
     "spaced-comment": "error",
     "switch-colon-spacing": "error",

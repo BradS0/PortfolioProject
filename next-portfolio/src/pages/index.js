@@ -1,12 +1,12 @@
 import PageLayout from '../components/common/layouts/page';
-import NavBar from '../components/common/nav-bar/nav-bar';
+import HomeView from '../components/views/home-view/home-view';
 
-const Home = () => {
-    return (
-      <PageLayout>
-        <NavBar/>
-      </PageLayout>
-    )
+function Home() {
+  return (
+    <PageLayout>
+      <HomeView />
+    </PageLayout>
+  );
 }
 
-export default Home
+export default Home;

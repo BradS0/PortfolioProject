@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Box, Container } from '@chakra-ui/react'
+import NavBar from '../nav-bar/nav-bar'
 
 
 const MainLayout = ({ children }) => {
@@ -10,14 +11,17 @@ const MainLayout = ({ children }) => {
                 <meta name="description" content="A web portfolio" />
                 <meta name="author" content="Bradley Onyett" />
                 <title>Bradley Onyett - Portfolio</title>
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
             </Head>
 
-            {/* Navbar here probably */}
 
-            <Container display='flex' flexDirection='column' p='0' m='0' maxW='100%' >
+            <Container display='flex' flexDirection='column' p='0' m='0' maxW='100%' minH='100vh' overflow='auto' >
+                <NavBar />
 
                 {children}
-            
+
             </Container>
         </Box>
     )

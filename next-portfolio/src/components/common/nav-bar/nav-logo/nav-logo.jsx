@@ -1,39 +1,42 @@
+import React from 'react';
 import {
-    Container,
-    Text,
-    Box
-} from '@chakra-ui/react'
-import Image from 'next/image'
-import NextLink from 'next/link'
-import navImage from './/../../../../../public/chimpanzee.jpg'
+  Container,
+  Text,
+  Box,
+  useColorModeValue,
+  Link,
+} from '@chakra-ui/react';
+import Image from 'next/image';
+import navImage from '../../../../../public/chimpanzee.jpg';
 
-import 'typeface-roboto'
+import 'typeface-roboto';
 
-const NavLogo = () => {
-    return (
-        // If you want a logo here in the future see {craftz.dog LogoBox component}
+function NavLogo() {
+  return (
+  // If you want a logo here in the future see {craftz.dog LogoBox component}
 
-        <Container display='flex' justifyContent='flex-start' maxWidth='10rem' paddingY='0' m='0' >
-            <Box p='0' m='0' maxHeight='3rem' maxWidth='3rem' borderRadius='4rem' overflow='hidden'>
-                <NextLink href='/'>
-                    <Image
-                        src={navImage}
-                        objectFit='cover'
-                    />
-                </NextLink>
-            </Box>
+    <Container display="flex" justifyContent="flex-start" maxWidth="14rem" paddingRight="0" paddingY="0" m="0">
+      <Box p="0" m="0" maxHeight="3rem" maxWidth="3rem" borderRadius="4rem" overflow="hidden">
+        <Link href="/">
+          <Image
+            src={navImage}
+            objectFit="cover"
+          />
+        </Link>
+      </Box>
 
-            <Text
-                color='gray.800'
-                fontFamily="Roboto"
-                fontWeight='bold'
-                paddingLeft='1rem'
-                paddingTop='0.75rem'
-            >
-                BradSO
-            </Text>
-        </Container>
-    )
+      <Text
+        color={useColorModeValue('gray.800', 'white')}
+        fontFamily="Quicksand     "
+        fontWeight="bold"
+        paddingLeft="1rem"
+        paddingTop="0.8rem"
+        paddingRight="0"
+      >
+        Bradley Onyett
+      </Text>
+    </Container>
+  );
 }
 
-export default NavLogo
+export default NavLogo;

@@ -26,7 +26,7 @@ const breakpoints = createBreakpoints({
 
 const colors = {
   primaryColourLightMode: '#F9F7F7',
-  secondaryColourLightMode: '#DBE2EF',
+  secondaryColourLightMode: '#9CCE7185',
   tertiaryColourLightMode: '#3F72AF',
   quaternaryColourLightMode: '#112D4E',
 

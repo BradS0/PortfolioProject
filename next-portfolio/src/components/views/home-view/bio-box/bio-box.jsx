@@ -5,7 +5,7 @@ function BioBox() {
   return (
     <Container
       minWidth="100%"
-      border="1px solid #C6C6C6"
+      border="1px solid #9CCE7185"
       borderRadius="5px"
       shadow="base"
     >
@@ -77,9 +77,9 @@ function BioBox() {
       <Container
         minWidth="100%"
         m="0"
-        p="0"
+        px="0"
+        pt='0.3rem'
         display="flex"
-        py="0.3rem"
       >
         <Text
           m="0"
@@ -97,6 +97,31 @@ function BioBox() {
           paddingTop="0.1rem"
         >
           Begin working with Transalis as a Junior Software Developer
+        </Text>
+      </Container>
+      <Container
+        minWidth="100%"
+        m="0"
+        p="0"
+        display="flex"
+        py="0.3rem"
+      >
+        <Text
+          m="0"
+          px="0.3rem"
+          fontWeight="bold"
+          fontFamily="Quicksand"
+        >
+          2022:
+        </Text>
+        <Text
+          m="0"
+          px="0.2rem"
+          fontFamily="Quicksand"
+          fontSize="0.9rem"
+          paddingTop="0.1rem"
+        >
+          Promoted from Junior Software Developer role at Transalis Ltd
         </Text>
       </Container>
     </Container>

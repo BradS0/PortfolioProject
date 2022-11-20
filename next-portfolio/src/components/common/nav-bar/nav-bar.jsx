@@ -8,7 +8,7 @@ function NavBar() {
     <Container
       minWidth="100%"
       minHeight="3rem"
-      background={useColorModeValue('lightColourDarkMode', 'tertiaryColourDarkMode')}
+      background={useColorModeValue('secondaryColourLightMode', 'tertiaryColourDarkMode')}
       m="0"
       paddingX="0"
       paddingY="0.25rem"

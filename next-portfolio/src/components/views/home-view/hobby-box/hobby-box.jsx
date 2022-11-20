@@ -1,4 +1,4 @@
-import { Container, Text } from '@chakra-ui/react';
+import { Container, Text, useColorModeValue } from '@chakra-ui/react';
 import React from 'react';
 
 function HobbyBox() {
@@ -8,7 +8,7 @@ function HobbyBox() {
       mx="0"
       my="1rem"
       minWidth="100%"
-      border="1px solid #C6C6C6"
+      border={useColorModeValue("1px solid #9CCE7185", '1px solid #C6C6C6')}
       borderRadius="5px"
       shadow="base"
       display="flex"
@@ -35,7 +35,7 @@ function HobbyBox() {
         flexDirection="column"
       >
         <Text style={textStyle}> Listening to a lot of music </Text>
-        <Text style={textStyle} fontWeight="bold"> Learning music production </Text>
+        <Text style={textStyle}> Learning music production </Text>
         <Text style={textStyle}> Programming </Text>
       </Container>
     </Container>

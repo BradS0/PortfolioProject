@@ -18,7 +18,7 @@ import ThemeToggleBtn from '../../theme-toggle-btn/theme-toggle-btn';
 function NavList() {
   return (
     <>
-      <Container display={['none', 'none', 'flex', 'flex']} m="0" paddingTop="0.4rem" paddingLeft="0">
+      <Container display={['none', 'none', 'flex', 'flex']} minWidth='105rem' m="0" paddingTop="0.4rem" paddingLeft="0">
         <NextLink href="/projects">
           <Button
             size="sm"
@@ -42,7 +42,7 @@ function NavList() {
           </Button>
         </NextLink>
         {/* TODO: Add link to git once public */}
-        <NextLink href="">
+        <NextLink href="https://github.com/BradS0/PortfolioProject">
           <Button
             size="sm"
             variant="ghost"
@@ -54,10 +54,15 @@ function NavList() {
             Source
           </Button>
         </NextLink>
-
+        <Container
+        m='0'
+        p='0'
+        minWidth='auto'
+        display='flex'
+        justifyContent="flexEnd">
         <ThemeToggleBtn
-          justifyContent="flexEnd"
         />
+        </Container>
       </Container>
       <Container display={['flex', 'flex', 'none', 'none']} justifyContent="flex-end" m="0" paddingTop="0.4rem" px="0.5rem">
         <ThemeToggleBtn />

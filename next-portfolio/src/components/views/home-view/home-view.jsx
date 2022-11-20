@@ -4,12 +4,13 @@ import AvatarBox from './avatar-box/avatar-box';
 import BioBox from './bio-box/bio-box';
 import HobbyBox from './hobby-box/hobby-box';
 import WorkBox from './work-box/work-box';
+import { FaRegCopyright } from 'react-icons/fa'
 
 function HomeView() {
   return (
     <Container
-      minWidth="100%"
-      px="6rem"
+      maxWidth="100%"
+      px="12rem"
       py="1.25rem"
       m="0"
     >
@@ -31,6 +32,20 @@ function HomeView() {
       <WorkBox />
       <BioBox />
       <HobbyBox />
+      <Container
+      display='flex'
+      flex-direction="row"
+      alignItems='center'
+      justifyContent="center"
+      pt='3rem'
+      >
+      <FaRegCopyright size='0.7rem' color='#C6C6C6'/>
+      <Text 
+      paddingLeft='0.25rem' 
+      fontSize='0.7rem'
+      textColor='#C6C6C6'
+      > 2022 Bradley Onyett. All rights reserved. </Text>
+      </Container>
     </Container>
   );
 }

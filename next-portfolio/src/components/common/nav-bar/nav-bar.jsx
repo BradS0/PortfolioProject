@@ -3,6 +3,8 @@ import React from 'react';
 import NavList from './nav-list/nav-list';
 import NavLogo from './nav-logo/nav-logo';
 
+// TODO: Fix being able to scroll right when in reduced view (but not in mobile view).
+
 function NavBar() {
   return (
     <Container

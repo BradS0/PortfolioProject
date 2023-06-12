@@ -1,10 +1,10 @@
 import { Container, Text } from '@chakra-ui/react';
 import React from 'react';
+import { FaRegCopyright } from 'react-icons/fa';
 import AvatarBox from './avatar-box/avatar-box';
 import BioBox from './bio-box/bio-box';
 import HobbyBox from './hobby-box/hobby-box';
 import WorkBox from './work-box/work-box';
-import { FaRegCopyright } from 'react-icons/fa'
 
 function HomeView() {
   return (
@@ -33,18 +33,23 @@ function HomeView() {
       <BioBox />
       <HobbyBox />
       <Container
-      display='flex'
-      flex-direction="row"
-      alignItems='center'
-      justifyContent="center"
-      pt='3rem'
+        display="flex"
+        flex-direction="row"
+        alignItems="center"
+        justifyContent="center"
+        pt="3rem"
       >
-      <FaRegCopyright size='0.7rem' color='#C6C6C6'/>
-      <Text 
-      paddingLeft='0.25rem' 
-      fontSize='0.7rem'
-      textColor='#C6C6C6'
-      > 2022 Bradley Onyett. All rights reserved. </Text>
+        <FaRegCopyright size="0.7rem" color="#C6C6C6" />
+        <Text
+          paddingLeft="0.25rem"
+          fontSize="0.7rem"
+          textColor="#C6C6C6"
+        >
+          {' '}
+          2022 Bradley Onyett. All rights reserved.
+          {' '}
+
+        </Text>
       </Container>
     </Container>
   );

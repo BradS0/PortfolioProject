@@ -2,10 +2,10 @@ import { ArrowForwardIcon } from '@chakra-ui/icons';
 import {
   Button, Container, Text, useColorModeValue,
 } from '@chakra-ui/react';
-import React from 'react';
 import Link from 'next/link';
+import React from 'react';
 
-function WorkBox() {
+function ProjectPostBox() {
   return (
     <Container
       mx="0"
@@ -69,4 +69,4 @@ function WorkBox() {
   );
 }
 
-export default WorkBox;
+export default ProjectPostBox;

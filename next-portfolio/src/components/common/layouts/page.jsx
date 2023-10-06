@@ -1,14 +1,17 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import React from 'react';
 
-const PageLayout = ({ children, title }) => (
+function PageLayout({ children, title }) {
+  return (
     <>
-        {title && (
-            <Head>
-                <title>{title}</title>
-            </Head>
-        )}
-        {children}
+      {title && (
+        <Head>
+          <title>{title}</title>
+        </Head>
+      )}
+      {children}
     </>
-)
+  );
+}
 
-export default PageLayout
+export default PageLayout;

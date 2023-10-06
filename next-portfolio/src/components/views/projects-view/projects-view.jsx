@@ -1,5 +1,9 @@
 import { Container, Text } from '@chakra-ui/react';
 import React from 'react';
+<<<<<<< Updated upstream
+=======
+import ProjectPostBox from './project-post-box/project-post-box';
+>>>>>>> Stashed changes
 
 function ProjectsView() {
   return (
@@ -9,6 +13,7 @@ function ProjectsView() {
       py="1.25rem"
       m="0"
     >
+<<<<<<< Updated upstream
       <Container
         minWidth="100%"
         border="1px solid #9CCE7185"
@@ -45,6 +50,9 @@ function ProjectsView() {
         </Container>
 
       </Container>
+=======
+      <ProjectPostBox />
+>>>>>>> Stashed changes
     </Container>
   );
 }

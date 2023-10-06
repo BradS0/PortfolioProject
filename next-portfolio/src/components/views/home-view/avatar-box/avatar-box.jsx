@@ -1,10 +1,11 @@
 import {
-  Box, chakra, Container, Heading, Link, Text, useColorModeValue,
+  Box, chakra, Container, Heading, Link, Text,
 } from '@chakra-ui/react';
 import React from 'react';
 import Image from 'next/image';
-import { FaInstagram, FaLinkedin } from 'react-icons/fa'
-import { GoMarkGithub } from 'react-icons/go'
+import { FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { GoMarkGithub } from 'react-icons/go';
+
 const ProfileImage = chakra(Image, {
   shouldForwardProp: (prop) => ['width', 'height', 'src', 'alt'].includes(prop),
 });
@@ -34,57 +35,57 @@ function AvatarBox() {
           Software Developer
         </Text>
         <Container
-          m='0'
-          px='0'
-          pt='0.3rem'
+          m="0"
+          px="0"
+          pt="0.3rem"
           display="flex"
           flexDirection="row"
           alignItems="center"
         >
           <FaLinkedin />
-          <Link href='https://uk.linkedin.com/in/bradley-onyett-07a102229'>
+          <Link href="https://uk.linkedin.com/in/bradley-onyett-07a102229">
             <Text
-              pl='0.5rem'
-              fontFamily='Quicksand'
-              fontSize='0.8rem'
+              pl="0.5rem"
+              fontFamily="Quicksand"
+              fontSize="0.8rem"
             >
               Bradley Onyett
             </Text>
           </Link>
         </Container>
         <Container
-          m='0'
-          px='0'
-          pt='0.3rem'
+          m="0"
+          px="0"
+          pt="0.3rem"
           display="flex"
           flexDirection="row"
           alignItems="center"
         >
           <GoMarkGithub />
-          <Link href='https://github.com/BradS0'>
+          <Link href="https://github.com/BradS0">
             <Text
-              pl='0.5rem'
-              fontFamily='Quicksand'
-              fontSize='0.8rem'
+              pl="0.5rem"
+              fontFamily="Quicksand"
+              fontSize="0.8rem"
             >
               BradS0
             </Text>
           </Link>
         </Container>
         <Container
-          m='0'
-          px='0'
-          pt='0.3rem'
+          m="0"
+          px="0"
+          pt="0.3rem"
           display="flex"
           flexDirection="row"
           alignItems="center"
         >
           <FaInstagram />
-          <Link href='https://www.instagram.com/bradleyonyett_'>
+          <Link href="https://www.instagram.com/bradleyonyett_">
             <Text
-              pl='0.5rem'
-              fontFamily='Quicksand'
-              fontSize='0.8rem'
+              pl="0.5rem"
+              fontFamily="Quicksand"
+              fontSize="0.8rem"
             >
               @bradleyonyett_
             </Text>

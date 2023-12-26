@@ -8,7 +8,7 @@ function HobbyBox() {
       mx="0"
       my="1rem"
       minWidth="100%"
-      border={useColorModeValue("1px solid #9CCE7185", '1px solid #C6C6C6')}
+      border={useColorModeValue('1px solid #9CCE7185', '1px solid #C6C6C6')}
       borderRadius="5px"
       shadow="base"
       display="flex"

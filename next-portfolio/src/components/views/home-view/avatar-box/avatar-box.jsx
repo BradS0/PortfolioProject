@@ -1,5 +1,5 @@
 import {
-  Box, chakra, Container, Heading, Link, Text, Image,
+  Box, Container, Heading, Link, Text, Image,
 } from '@chakra-ui/react';
 import React from 'react';
 import { FaInstagram, FaLinkedin } from 'react-icons/fa';

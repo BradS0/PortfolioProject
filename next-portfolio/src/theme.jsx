@@ -4,7 +4,7 @@ import { mode, createBreakpoints } from '@chakra-ui/theme-tools';
 const styles = {
   global: (props) => ({
     body: {
-      bg: mode('#F9F7F7', '#353941')(props),
+      bg: mode('#9CCE7120', '#353941')(props),
     },
   }),
 };
@@ -25,7 +25,7 @@ const breakpoints = createBreakpoints({
 });
 
 const colors = {
-  primaryColourLightMode: '#F9F7F7',
+  primaryColourLightMode: '#9CCE7120',
   secondaryColourLightMode: '#9CCE7185',
   tertiaryColourLightMode: '#3F72AF',
   quaternaryColourLightMode: '#112D4E',

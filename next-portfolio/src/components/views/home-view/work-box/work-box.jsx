@@ -34,13 +34,13 @@ function WorkBox() {
         fontFamily="Quicksand"
         fontSize="0.9rem"
       >
-        Bradley is a Software Developer based in Portsmouth,
+         I'm a Software Developer based in Portsmouth,
         with a passion for digital services and design.
-        Currently, he is working under the role of Software
-        Developer for Transalis Ltd, but still participates
-        in projects outside of his day-to-day work to pursue his
-        interests and develop his skills! Since graduating
-        from Portsmouth University, he has delved more into the
+        Currently, I'm working under the role of Software
+        Developer for Transalis Ltd, but still I participate
+        in projects outside of day-to-day work to pursue my
+        interests and develop my skills! Since graduating
+        from Portsmouth University, I have delved more into the
         world of frontend development and API design!
       </Text>
       <Container

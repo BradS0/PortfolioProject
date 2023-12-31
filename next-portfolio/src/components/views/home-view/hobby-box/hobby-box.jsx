@@ -1,4 +1,6 @@
-import { Container, Text, useColorModeValue } from '@chakra-ui/react';
+import {
+  Container, ListItem, Text, UnorderedList, useColorModeValue,
+} from '@chakra-ui/react';
 import React from 'react';
 
 function HobbyBox() {
@@ -21,9 +23,9 @@ function HobbyBox() {
         paddingTop="0.5rem"
         fontWeight="bold"
         borderBottom="1px solid #C6C6C6"
-        maxWidth="21rem"
+        maxWidth="22rem"
       >
-        What I spend my time doing?
+        Technical Knowledge
       </Text>
 
       <Container
@@ -34,9 +36,96 @@ function HobbyBox() {
         display="flex"
         flexDirection="column"
       >
-        <Text style={textStyle}> Listening to a lot of music </Text>
-        <Text style={textStyle}> Learning music production </Text>
-        <Text style={textStyle}> Programming </Text>
+        <UnorderedList
+          pl="0.5rem"
+        >
+          <ListItem>
+            <Text style={textStyle}> Industry Web development experience using HTML, CSS and Modern JavaScript (including Angular and React), with some experience in TypeScript and PHP as well as developing progressive web apps. </Text>
+          </ListItem>
+          <ListItem>
+            <Text style={textStyle}> Industry API development experience using Modern JavaScript and AWS Cloud technologies. </Text>
+          </ListItem>
+          <ListItem>
+            <Text style={textStyle}> Application development experience using Java, Python, C++, Haskell and JavaScript (with Node.js). </Text>
+          </ListItem>
+          <ListItem>
+            <Text style={textStyle}> Mobile application development experience using Java and Maven (with Android Studio), as well as experience developing complete mobile applications using Dart (including Flutter) for iOS and Android compliance. </Text>
+          </ListItem>
+          <ListItem>
+            <Text style={textStyle}> Industry experience in working with Git version control and maintenance / contribution to code repositories, including some experience using Git automation with CI/CD. </Text>
+          </ListItem>
+          <ListItem>
+            <Text style={textStyle}> Comfortable in a Windows and MacOS environment, with experience in Linux. </Text>
+          </ListItem>
+          <ListItem>
+            <Text style={textStyle}> Competent with Bash commands and scripts. </Text>
+          </ListItem>
+          <ListItem>
+            <Text style={textStyle}> Able to create and modify SQL queries, with experience using MariaDB, SQLite and Athena. </Text>
+          </ListItem>
+          <ListItem>
+            <Text style={textStyle}> Proficient with the use of Adobe Photoshop, Figma and similar creative softwares. </Text>
+          </ListItem>
+        </UnorderedList>
+
+        <Text
+          fontFamily="Quicksand"
+          fontSize="1.5rem"
+          paddingTop="0.5rem"
+          fontWeight="bold"
+          borderBottom="1px solid #C6C6C6"
+          maxWidth="22rem"
+        >
+          Technical Skills
+        </Text>
+
+        <UnorderedList m="0">
+          <Text
+            fontFamily="Quicksand"
+            fontSize="1.2rem"
+            fontWeight="200"
+          >
+            Programming Languages
+          </Text>
+          <UnorderedList px="0.5rem">
+            {/* <ListItem>
+                <Text style={textStyle}> In order of confidence & familiarity </Text>
+              </ListItem> */}
+            <ListItem>
+              <Text style={textStyle}> HTML, CSS & JavaScript </Text>
+            </ListItem>
+            <ListItem>
+              <Text style={textStyle}> Java </Text>
+            </ListItem>
+            <ListItem>
+              <Text style={textStyle}> Python </Text>
+            </ListItem>
+            <ListItem>
+              <Text style={textStyle}> SQL </Text>
+            </ListItem>
+            <ListItem>
+              <Text style={textStyle}> C++ </Text>
+            </ListItem>
+            <ListItem>
+              <Text style={textStyle}> Dart </Text>
+            </ListItem>
+            <ListItem>
+              <Text style={textStyle}> Haskell </Text>
+            </ListItem>
+          </UnorderedList>
+          <Text
+            fontFamily="Quicksand"
+            fontSize="1.2rem"
+            fontWeight="200"
+          >
+            Cloud Technologies
+          </Text>
+          <UnorderedList px="0.5rem">
+            <ListItem>
+              <Text style={textStyle}> AWS </Text>
+            </ListItem>
+          </UnorderedList>
+        </UnorderedList>
       </Container>
     </Container>
   );

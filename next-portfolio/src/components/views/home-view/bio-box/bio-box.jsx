@@ -19,7 +19,7 @@ function BioBox() {
           paddingTop="0.5rem"
           fontWeight="bold"
           borderBottom="1px solid #C6C6C6"
-          maxWidth="3rem"
+          maxWidth="2.5rem"
         >
           Bio
         </Text>

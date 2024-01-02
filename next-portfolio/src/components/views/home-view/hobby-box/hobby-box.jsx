@@ -1,5 +1,5 @@
 import {
-  Container, ListItem, Text, UnorderedList, useColorModeValue,
+  Container, ListItem, Text, UnorderedList,
 } from '@chakra-ui/react';
 import React from 'react';
 
@@ -10,7 +10,7 @@ function HobbyBox() {
       mx="0"
       my="1rem"
       minWidth="100%"
-      border={useColorModeValue('1px solid #9CCE7185', '1px solid #C6C6C6')}
+      border="1px solid #9CCE7185"
       borderRadius="5px"
       shadow="base"
       display="flex"
@@ -23,7 +23,7 @@ function HobbyBox() {
         paddingTop="0.5rem"
         fontWeight="bold"
         borderBottom="1px solid #C6C6C6"
-        maxWidth="22rem"
+        maxWidth="15rem"
       >
         Technical Knowledge
       </Text>
@@ -52,7 +52,7 @@ function HobbyBox() {
             <Text style={textStyle}> Mobile application development experience using Java and Maven (with Android Studio), as well as experience developing complete mobile applications using Dart (including Flutter) for iOS and Android compliance. </Text>
           </ListItem>
           <ListItem>
-            <Text style={textStyle}> Industry experience in working with Git version control and maintenance / contribution to code repositories, including some experience using Git automation with CI/CD. </Text>
+            <Text style={textStyle}> Industry experience in working with Git version control and maintenance / contribution to code repositories, including experience using Git automation with CI/CD. </Text>
           </ListItem>
           <ListItem>
             <Text style={textStyle}> Comfortable in a Windows and MacOS environment, with experience in Linux. </Text>
@@ -74,7 +74,7 @@ function HobbyBox() {
           paddingTop="0.5rem"
           fontWeight="bold"
           borderBottom="1px solid #C6C6C6"
-          maxWidth="22rem"
+          maxWidth="11rem"
         >
           Technical Skills
         </Text>
@@ -123,6 +123,93 @@ function HobbyBox() {
           <UnorderedList px="0.5rem">
             <ListItem>
               <Text style={textStyle}> AWS </Text>
+            </ListItem>
+          </UnorderedList>
+          <Text
+            fontFamily="Quicksand"
+            fontSize="1.2rem"
+            fontWeight="200"
+          >
+            Frontend Frameworks
+          </Text>
+          <UnorderedList px="0.5rem">
+            <ListItem>
+              <Text style={textStyle}> React & NextJS </Text>
+            </ListItem>
+            <ListItem>
+              <Text style={textStyle}> AWS Amplify </Text>
+            </ListItem>
+            <ListItem>
+              <Text style={textStyle}> Flutter </Text>
+            </ListItem>
+            <ListItem>
+              <Text style={textStyle}> Angular </Text>
+            </ListItem>
+          </UnorderedList>
+          <Text
+            fontFamily="Quicksand"
+            fontSize="1.2rem"
+            fontWeight="200"
+          >
+            Frontend Libraries
+          </Text>
+          <UnorderedList px="0.5rem">
+            <ListItem>
+              <Text style={textStyle}> ChakraUI </Text>
+            </ListItem>
+            <ListItem>
+              <Text style={textStyle}> Tailwind </Text>
+            </ListItem>
+          </UnorderedList>
+          <Text
+            fontFamily="Quicksand"
+            fontSize="1.2rem"
+            fontWeight="200"
+          >
+            Server Frameworks
+          </Text>
+          <UnorderedList px="0.5rem">
+            <ListItem>
+              <Text style={textStyle}> Next </Text>
+            </ListItem>
+            <ListItem>
+              <Text style={textStyle}> Express </Text>
+            </ListItem>
+          </UnorderedList>
+          <Text
+            fontFamily="Quicksand"
+            fontSize="1.2rem"
+            fontWeight="200"
+          >
+            Databases
+          </Text>
+          <UnorderedList px="0.5rem">
+            <ListItem>
+              <Text style={textStyle}> SQLite </Text>
+            </ListItem>
+            <ListItem>
+              <Text style={textStyle}> AWS DynamoDB </Text>
+            </ListItem>
+            <ListItem>
+              <Text style={textStyle}> AWS Athena </Text>
+            </ListItem>
+            <ListItem>
+              <Text style={textStyle}> MariaDB </Text>
+            </ListItem>
+          </UnorderedList>
+          <Text
+            fontFamily="Quicksand"
+            fontSize="1.2rem"
+            fontWeight="200"
+          >
+            Ops
+          </Text>
+          <UnorderedList px="0.5rem">
+            <ListItem>
+              <Text style={textStyle}> Gitlab CI/CD </Text>
+            </ListItem>
+            <ListItem>
+              <Text style={textStyle}> AWS CloudFormation </Text>
             </ListItem>
           </UnorderedList>
         </UnorderedList>

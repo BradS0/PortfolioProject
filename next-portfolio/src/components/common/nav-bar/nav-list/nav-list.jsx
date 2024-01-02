@@ -18,7 +18,7 @@ import ThemeToggleBtn from '../../theme-toggle-btn/theme-toggle-btn';
 function NavList() {
   return (
     <>
-      <Container display={['none', 'none', 'flex', 'flex']} minWidth='105rem' m="0" paddingTop="0.4rem" paddingLeft="0">
+      <Container display={['none', 'none', 'none', 'flex']} minWidth="105rem" m="0" paddingTop="0.4rem" paddingLeft="0">
         <NextLink href="/projects">
           <Button
             size="sm"
@@ -55,16 +55,16 @@ function NavList() {
           </Button>
         </NextLink>
         <Container
-        m='0'
-        p='0'
-        minWidth='auto'
-        display='flex'
-        justifyContent="flexEnd">
-        <ThemeToggleBtn
-        />
+          m="0"
+          p="0"
+          minWidth="auto"
+          display="flex"
+          justifyContent="flexEnd"
+        >
+          <ThemeToggleBtn />
         </Container>
       </Container>
-      <Container display={['flex', 'flex', 'none', 'none']} justifyContent="flex-end" m="0" paddingTop="0.4rem" px="0.5rem">
+      <Container display={['flex', 'flex', 'flex', 'none']} justifyContent="flex-end" m="0" maxW="100%" paddingTop="0.4rem" px="0.5rem">
         <ThemeToggleBtn />
         <Menu>
           {({ isOpen }) => (

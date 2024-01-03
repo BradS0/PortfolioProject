@@ -16,7 +16,7 @@ function HomeView() {
     >
       <Container
         minWidth="100%"
-        border="1px solid #C6C6C6"
+        border="1px solid #9CCE7185"
         borderRadius="5px"
         shadow="base"
         textAlign="center"

@@ -98,7 +98,7 @@ function AvatarBox() {
         textAlign="center"
       >
         <Box
-          borderColor="whiteAlpha.800"
+          borderColor="#9CCE7185"
           borderWidth={2}
           borderStyle="solid"
           w="100px"

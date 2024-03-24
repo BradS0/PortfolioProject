@@ -1,12 +1,25 @@
 import { Container, Text } from '@chakra-ui/react';
 import React from 'react';
+// import gsap from 'gsap';
+// import { useGSAP } from '@gsap/react';
 import { FaRegCopyright } from 'react-icons/fa';
 import AvatarBox from './avatar-box/avatar-box';
 import BioBox from './bio-box/bio-box';
 import HobbyBox from './hobby-box/hobby-box';
 import WorkBox from './work-box/work-box';
 
-function HomeView() {
+// const words = "I'm a software developer based in the UK";
+
+export function HomeView() {
+  // useGSAP(() => {
+  //   const words = gsap.utils.toArray(AnimatedIntro);
+  //   const t1 = gsap.timeline({ delay: 0.5 });
+  //   const timePerCharacter = 0.2;
+  //   words.forEach((e1) => {
+  //     t1.from(e1, { text: '', duration: e1.innerHTML.length * timePerCharacter, ease: 'none' });
+  //   });
+  // }, { scope: AnimatedIntro });
+
   return (
     <Container
       maxWidth="100%"
@@ -25,7 +38,7 @@ function HomeView() {
           fontFamily="Quicksand"
           py="0.5rem"
         >
-          Hey! I'm a software developer based in the UK!
+          Hey! I'm a software developer based in the UK
         </Text>
       </Container>
       <AvatarBox />

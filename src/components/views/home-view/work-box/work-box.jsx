@@ -49,7 +49,7 @@ function WorkBox() {
         minWidth="100%"
         textAlign="center"
       >
-        <Link href="/project" passHref>
+        <Link href="/projects" passHref>
           <Button
             width="auto"
             bg={useColorModeValue('secondaryColourLightMode', 'secondaryColourDarkMode')}

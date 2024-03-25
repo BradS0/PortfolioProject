@@ -1,7 +1,8 @@
 import { Container, Image, Text } from '@chakra-ui/react';
 import React from 'react';
 
-function ProjectContainer(imageSource, textSource) {
+function ProjectContainer(project) {
+  const { projectTitle, projectText, projectImage } = project;
   return (
     <Container
       minWidth="100%"
@@ -12,13 +13,13 @@ function ProjectContainer(imageSource, textSource) {
     >
       <Container
         minWidth="100%"
-        bg="red"
+        // bg="red"
         display="flex"
         flexDirection="row"
         justifyContent="center"
       >
         <Container
-          bg="blue"
+          // bg="blue"
           textAlign="center"
           paddingY="0"
           paddingRight="0"
@@ -26,7 +27,7 @@ function ProjectContainer(imageSource, textSource) {
           my="0"
         >
           <Image
-            src={imageSource}
+            src={projectImage}
             alt="Project Image"
             borderRadius="full"
             width="100%"
@@ -34,7 +35,7 @@ function ProjectContainer(imageSource, textSource) {
           />
         </Container>
         <Container
-          bg="green"
+          // bg="green"
           paddingY="0"
           paddingLeft="0"
           minWidth="70%"
@@ -47,7 +48,7 @@ function ProjectContainer(imageSource, textSource) {
             fontSize="0.9rem"
             paddingTop="0.1rem"
           >
-            {textSource}
+            {projectText}
           </Text>
         </Container>
       </Container>

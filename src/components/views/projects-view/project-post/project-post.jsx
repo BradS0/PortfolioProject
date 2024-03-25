@@ -9,7 +9,7 @@ function ProjectPost() {
   const projects = projectsJSON;
   return (
     <>
-      {projects.map((project, index) => (
+      {projects.map((project) => (
         <ProjectContainer projectData={project} />
       ))}
     </>

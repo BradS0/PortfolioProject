@@ -7,7 +7,7 @@ import projectsJSON from './projects.json';
 
 function ProjectPost() {
   const [projects, setProjects] = useState([]);
-  const projectImages = ["/Chimpanzee.jpg", "/CareOnTheGo.jpg"];
+  const projectImages = ['/2DFFT.png', '/CareOnTheGo.jpg'];
 
   useEffect(() => {
     async function fetchGitData() {
@@ -16,7 +16,8 @@ function ProjectPost() {
       try {
         const response = await fetch(gitURL);
         const data = await response.json();
-        setProjects(data); // Set the fetched data into state
+        console.log(data);
+        setProjects(data);
       } catch (error) {
         console.error('Error fetching GitHub repos:', error);
       }
@@ -27,8 +28,8 @@ function ProjectPost() {
 
   return (
     <>
-      {projects.map((project, projectImage) => (
-        <ProjectContainer projectData={project} projectImage={projectImage}/>
+      {projects.map((project, index) => (
+        <ProjectContainer projectData={project} projectImage={projectImages[index]} />
       ))}
     </>
   );

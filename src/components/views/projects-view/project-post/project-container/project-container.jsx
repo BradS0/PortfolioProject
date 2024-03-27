@@ -1,9 +1,11 @@
-import { Container, Image, Text } from '@chakra-ui/react';
+import {
+  Container, Image, Text, Button, Flex,
+} from '@chakra-ui/react';
 import React from 'react';
+import NextLink from 'next/link';
+import { GoMarkGithub } from 'react-icons/go';
 
-function ProjectContainer(project, projectImage) {
-  console.log(projectImage);
-  const { projectData } = project;
+function ProjectContainer({ projectData, projectImage }) {
   return (
     <Container
       minWidth="100%"
@@ -29,12 +31,13 @@ function ProjectContainer(project, projectImage) {
           paddingX="0"
           minWidth="20%"
           m="0.25rem"
-          borderRadius="1rem"
+          borderRadius="5rem"
         >
           <Image
             src={projectImage}
             alt="Project Image"
             padding="0"
+            borderRadius="2rem"
             margin="0"
             width="100%"
             height="100%"
@@ -72,7 +75,6 @@ function ProjectContainer(project, projectImage) {
             m="0"
             pl="2rem"
             minW="100%"
-            borderBottom="1px solid #9CCE7185"
 
           >
             <Text
@@ -84,6 +86,26 @@ function ProjectContainer(project, projectImage) {
               {projectData.description}
             </Text>
           </Container>
+          <Flex
+            pl="2rem"
+            pb="0.5rem"
+            m="0"
+          >
+            <NextLink href={projectData.html_url}>
+              <Button
+                size="sm"
+                variant="ghost"
+                bg="#9CCE7150"
+                // border="1px solid #9CCE7185"
+                leftIcon={<GoMarkGithub />}
+                marginRight="0.5rem"
+                marginTop="0.2rem"
+                fontFamily="Quicksand"
+              >
+                Source
+              </Button>
+            </NextLink>
+          </Flex>
 
         </Container>
       </Container>

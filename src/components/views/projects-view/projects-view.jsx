@@ -6,7 +6,7 @@ function ProjectsView() {
   return (
     <Container
       maxWidth="100%"
-      px="12rem"
+      px="20rem"
       py="1.25rem"
       m="0"
     >

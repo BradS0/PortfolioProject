@@ -1,8 +1,8 @@
 import { Container, Image, Text } from '@chakra-ui/react';
 import React from 'react';
 
-function ProjectContainer(project) {
-  console.log(project);
+function ProjectContainer(project, projectImage) {
+  console.log(projectImage);
   const { projectData } = project;
   return (
     <Container
@@ -12,6 +12,7 @@ function ProjectContainer(project) {
       shadow="base"
       textAlign="center"
       padding="0"
+      mb="1rem"
     >
       <Container
         minWidth="100%"
@@ -22,15 +23,16 @@ function ProjectContainer(project) {
         justifyContent="center"
       >
         <Container
-          bg="blue"
+          // bg="blue"
           textAlign="center"
           paddingY="0"
           paddingX="0"
           minWidth="20%"
-          my="0"
+          m="0.25rem"
+          borderRadius="1rem"
         >
           <Image
-            src={projectData.projectImage}
+            src={projectImage}
             alt="Project Image"
             padding="0"
             margin="0"
@@ -40,20 +42,49 @@ function ProjectContainer(project) {
         </Container>
         <Container
           // bg="green"
+          display="flex"
           paddingY="0"
           paddingLeft="0"
           minWidth="70%"
           m="0"
+          flexDirection="column"
+
         >
-          <Text
+          <Container
             m="0"
-            px="0.2rem"
-            fontFamily="Quicksand"
-            fontSize="0.9rem"
-            paddingTop="0.1rem"
+            p="0"
+            ml="2rem"
+            minW="80%"
+            borderBottom="1px solid #9CCE7185"
+
           >
-            {projectData.projectText}
-          </Text>
+            <Text
+              align="left"
+              fontFamily="Quicksand"
+              fontSize="1.2rem"
+              fontWeight="semibold"
+              paddingY="0.1rem"
+            >
+              {projectData.name}
+            </Text>
+          </Container>
+          <Container
+            m="0"
+            pl="2rem"
+            minW="100%"
+            borderBottom="1px solid #9CCE7185"
+
+          >
+            <Text
+              align="left"
+              fontFamily="Quicksand"
+              fontSize="0.9rem"
+              paddingY="0.1rem"
+            >
+              {projectData.description}
+            </Text>
+          </Container>
+
         </Container>
       </Container>
     </Container>

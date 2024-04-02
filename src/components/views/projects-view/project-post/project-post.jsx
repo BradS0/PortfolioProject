@@ -3,7 +3,7 @@ import ProjectContainer from './project-container/project-container';
 
 function ProjectPost() {
   const [projects, setProjects] = useState([]);
-  const projectImages = ['/2DFFT.png', '/CareOnTheGo.jpg'];
+  const projectImages = ['/JavaBeans.png', '/2DFFT.png', '/CareOnTheGo.jpg'];
 
   useEffect(() => {
     async function fetchGitData() {

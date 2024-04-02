@@ -57,7 +57,8 @@ function ProjectContainer({ projectData, projectImage }) {
             m="0"
             p="0"
             ml="2rem"
-            minW="80%"
+
+            width={['50%', '50%', '50%', '50%']}
             borderBottom="1px solid #9CCE7185"
 
           >

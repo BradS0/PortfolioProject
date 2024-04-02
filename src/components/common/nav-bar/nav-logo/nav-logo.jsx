@@ -7,7 +7,7 @@ import {
   Link,
 } from '@chakra-ui/react';
 import Image from 'next/image';
-import navImage from '../../../../../public/chimpanzee.jpg';
+import navImage from '../../../../../public/WebsiteLogo.jpg';
 
 import 'typeface-roboto';
 

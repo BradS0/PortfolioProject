@@ -1,9 +1,5 @@
-import { Container, Image, Text } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import ProjectContainer from './project-container/project-container';
-import projectsJSON from './projects.json';
-
-// Add image source link to JSON, map JSON to projectContainer Object: fieldNames.map((fieldName) => <projectContainer blablablah />)
 
 function ProjectPost() {
   const [projects, setProjects] = useState([]);

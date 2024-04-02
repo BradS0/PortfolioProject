@@ -8,7 +8,7 @@ import { GoMarkGithub } from 'react-icons/go';
 // const ProfileImage = chakra(Image, {
 //   shouldForwardProp: (prop) => ['width', 'height', 'src', 'alt'].includes(prop),
 // });
-const avatarImage = '/leegriggs.jpg';
+const avatarImage = '/WebsiteLogo.jpg';
 
 function AvatarBox() {
   return (

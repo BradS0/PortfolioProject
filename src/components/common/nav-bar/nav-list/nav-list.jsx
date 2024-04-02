@@ -5,12 +5,12 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
+  Link,
   useColorModeValue,
 } from '@chakra-ui/react';
-import React, { useState } from 'react';
+import React from 'react';
 import { HamburgerIcon, ChevronDownIcon } from '@chakra-ui/icons';
 import { GoMarkGithub } from 'react-icons/go';
-import NextLink from 'next/link';
 import ThemeToggleBtn from '../../theme-toggle-btn/theme-toggle-btn';
 
 // TODO: Map NextLink components, can be used to make these lines a little more efficient!
@@ -19,7 +19,7 @@ function NavList() {
   return (
     <>
       <Container display={['none', 'none', 'none', 'flex']} minWidth="105rem" m="0" paddingTop="0.4rem" paddingLeft="0">
-        <NextLink href="/projects">
+        <Link href="/projects">
           <Button
             size="sm"
             variant="ghost"
@@ -29,8 +29,8 @@ function NavList() {
           >
             Projects & Works
           </Button>
-        </NextLink>
-        <NextLink href="/posts">
+        </Link>
+        <Link href="/posts">
           <Button
             size="sm"
             variant="ghost"
@@ -40,9 +40,9 @@ function NavList() {
           >
             Posts
           </Button>
-        </NextLink>
+        </Link>
         {/* TODO: Add link to git once public */}
-        <NextLink href="https://github.com/BradS0/PortfolioProject">
+        <Link href="https://github.com/BradS0/PortfolioProject">
           <Button
             size="sm"
             variant="ghost"
@@ -53,7 +53,7 @@ function NavList() {
           >
             Source
           </Button>
-        </NextLink>
+        </Link>
         <Container
           m="0"
           p="0"
@@ -79,22 +79,28 @@ function NavList() {
                 onHover={useColorModeValue('primaryColourLightMode', 'primaryColourDarkMode')}
               />
               <MenuList>
-                <MenuItem
-                  fontFamily="Quicksand"
-                >
-                  Projects & Works
-                </MenuItem>
-                <MenuItem
-                  fontFamily="Quicksand"
-                >
-                  Posts
-                </MenuItem>
-                <MenuItem
-                  fontFamily="Quicksand"
-                  icon={<GoMarkGithub />}
-                >
-                  Source
-                </MenuItem>
+                <Link href="/projects">
+                  <MenuItem
+                    fontFamily="Quicksand"
+                  >
+                    Projects & Works
+                  </MenuItem>
+                </Link>
+                <Link href="/posts">
+                  <MenuItem
+                    fontFamily="Quicksand"
+                  >
+                    Posts
+                  </MenuItem>
+                </Link>
+                <Link href="https://github.com/BradS0/PortfolioProject">
+                  <MenuItem
+                    fontFamily="Quicksand"
+                    icon={<GoMarkGithub />}
+                  >
+                    Source
+                  </MenuItem>
+                </Link>
               </MenuList>
             </>
           )}

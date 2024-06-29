@@ -30,7 +30,7 @@ function NavList() {
             Projects & Works
           </Button>
         </Link>
-        <Link href="/posts">
+        {/* <Link href="/posts">
           <Button
             size="sm"
             variant="ghost"
@@ -40,8 +40,7 @@ function NavList() {
           >
             Posts
           </Button>
-        </Link>
-        {/* TODO: Add link to git once public */}
+        </Link> */}
         <Link href="https://github.com/BradS0/PortfolioProject">
           <Button
             size="sm"
@@ -86,13 +85,13 @@ function NavList() {
                     Projects & Works
                   </MenuItem>
                 </Link>
-                <Link href="/posts">
+                {/* <Link href="/posts">
                   <MenuItem
                     fontFamily="Quicksand"
                   >
                     Posts
                   </MenuItem>
-                </Link>
+                </Link> */}
                 <Link href="https://github.com/BradS0/PortfolioProject">
                   <MenuItem
                     fontFamily="Quicksand"

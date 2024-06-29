@@ -59,7 +59,7 @@ export function HomeView() {
           textColor="#C6C6C6"
         >
           {' '}
-          2022 Bradley Onyett. All rights reserved.
+          2024 Bradley Onyett. All rights reserved.
           {' '}
 
         </Text>

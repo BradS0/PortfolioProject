@@ -4,8 +4,10 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 function WorkBox() {
+  const MotionButton = motion(Button);
   return (
     <Container
       mx="0"
@@ -50,11 +52,13 @@ function WorkBox() {
         textAlign="center"
       >
         <Link href="/projects" passHref>
-          <Button
+          <MotionButton
             width="auto"
             bg={useColorModeValue('secondaryColourLightMode', 'secondaryColourDarkMode')}
             my="0.5rem"
             rightIcon={<ArrowForwardIcon />}
+            transition="all 0.3s ease-in-out"
+            whileHover={{ scale: 1.05 }}
           >
             <Text
               fontFamily="Quicksand"
@@ -62,7 +66,7 @@ function WorkBox() {
             >
               Portfolio Work
             </Text>
-          </Button>
+          </MotionButton>
         </Link>
       </Container>
     </Container>

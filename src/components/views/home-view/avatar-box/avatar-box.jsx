@@ -1,6 +1,7 @@
 import {
   Box, Container, Heading, Link, Text, Image,
 } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
 import React from 'react';
 import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { GoMarkGithub } from 'react-icons/go';
@@ -11,14 +12,38 @@ import { GoMarkGithub } from 'react-icons/go';
 const avatarImage = '/WebsiteLogo.jpg';
 
 function AvatarBox() {
+  const MotionContainer = motion(Container);
+  const containerAnim = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.5,
+        staggerDirection: -1,
+      },
+    },
+  };
+  const itemAnim = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+    },
+  };
   return (
-    <Container
+    <MotionContainer
       mx="0"
       my="3rem"
       minWidth="100%"
       display="flex"
       px="1rem"
       flexDirection="row"
+      variants={containerAnim}
+      initial="hidden"
+      animate="show"
+    // initial={{ opacity: 0, scale: 0.5 }}
+    // animate={{ opacity: 1, scale: 1 }}
+    // transition={{ ease: 'linear', duration: 2, x: { duration: 1 } }}
     >
       <Box flexGrow={1}>
         <Heading
@@ -30,16 +55,18 @@ function AvatarBox() {
         </Heading>
         <Text
           fontFamily="Quicksand"
+          variants={itemAnim}
         >
           Software Developer
         </Text>
-        <Container
+        <MotionContainer
           m="0"
           px="0"
           pt="0.3rem"
           display="flex"
           flexDirection="row"
           alignItems="center"
+          variants={itemAnim}
         >
           <FaLinkedin />
           <Link href="https://uk.linkedin.com/in/bradley-onyett-07a102229">
@@ -51,14 +78,15 @@ function AvatarBox() {
               Bradley Onyett
             </Text>
           </Link>
-        </Container>
-        <Container
+        </MotionContainer>
+        <MotionContainer
           m="0"
           px="0"
           pt="0.3rem"
           display="flex"
           flexDirection="row"
           alignItems="center"
+          variants={itemAnim}
         >
           <GoMarkGithub />
           <Link href="https://github.com/BradS0">
@@ -70,14 +98,15 @@ function AvatarBox() {
               BradS0
             </Text>
           </Link>
-        </Container>
-        <Container
+        </MotionContainer>
+        <MotionContainer
           m="0"
           px="0"
           pt="0.3rem"
           display="flex"
           flexDirection="row"
           alignItems="center"
+          variants={itemAnim}
         >
           <FaInstagram />
           <Link href="https://www.instagram.com/bradleyonyett_">
@@ -89,7 +118,7 @@ function AvatarBox() {
               @bradleyonyett_
             </Text>
           </Link>
-        </Container>
+        </MotionContainer>
       </Box>
       <Box
         flexShrink={0}
@@ -111,12 +140,12 @@ function AvatarBox() {
             src={avatarImage}
             alt="Profile image"
             borderRadius="full"
-            // width="100%"
-            // height="100%"
+          // width="100%"
+          // height="100%"
           />
         </Box>
       </Box>
-    </Container>
+    </MotionContainer>
   );
 }
 

@@ -3,7 +3,8 @@ import ProjectContainer from './project-container/project-container';
 
 function ProjectPost() {
   const [projects, setProjects] = useState([]);
-  const projectImages = ['/JavaBeans.png', '/2DFFT.png', '/CareOnTheGo.jpg'];
+  // TODO: Add these images to the correlating repos, pull them from git instead!
+  const projectImages = ['/2DFFT.png', '/JavaBeans.png', '/CareOnTheGo.jpg'];
 
   useEffect(() => {
     async function fetchGitData() {

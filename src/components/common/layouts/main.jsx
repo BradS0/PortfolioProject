@@ -25,7 +25,15 @@ function MainLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
       </Head>
 
-      <MotionContainer display="flex" flexDirection="column" p="0" m="0" maxW="100%" minH="100vh" overflow="auto">
+      <MotionContainer
+      display="flex"
+      flexDirection="column"
+      p="0"
+      m="0"
+      maxW="100%"
+      minH="100vh"
+      overflow="auto"
+      >
         <NavBar />
 
         {children}

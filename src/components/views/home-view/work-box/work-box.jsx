@@ -11,7 +11,7 @@ function WorkBox() {
   return (
     <Container
       mx="0"
-      my="1rem"
+      my="1.5rem"
       minWidth="100%"
       border="1px solid #9CCE7185"
       borderRadius="5px"

@@ -1,6 +1,9 @@
+'use client';
+
 import { Container } from '@chakra-ui/react';
-import React from 'react';
+import React, { useEffect } from 'react';
 import ProjectPost from './project-post/project-post';
+import AnimatedSection from '../../common/AnimatedSection';
 
 function ProjectsView() {
   return (
@@ -10,7 +13,10 @@ function ProjectsView() {
       py="1.25rem"
       m="0"
     >
-      <ProjectPost />
+      {/* Project Post Section */}
+      <AnimatedSection>
+        <ProjectPost />
+      </AnimatedSection>
     </Container>
   );
 }

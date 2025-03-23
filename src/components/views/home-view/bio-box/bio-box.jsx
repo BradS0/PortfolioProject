@@ -5,6 +5,7 @@ function BioBox() {
   return (
     <Container
       minWidth="100%"
+      my="1.5rem"
       border="1px solid #9CCE7185"
       borderRadius="5px"
       shadow="base"

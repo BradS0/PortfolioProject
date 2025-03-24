@@ -1,5 +1,6 @@
 import { Container, Text } from '@chakra-ui/react';
 import React from 'react';
+import AnimatedSection from '../../../common/AnimatedSection';
 
 function BioBox() {
   return (
@@ -14,16 +15,18 @@ function BioBox() {
         m="0"
         p="0"
       >
-        <Text
-          fontFamily="Quicksand"
-          fontSize="1.5rem"
-          paddingTop="0.5rem"
-          fontWeight="bold"
-          borderBottom="1px solid #C6C6C6"
-          maxWidth="2.5rem"
-        >
-          Bio
-        </Text>
+        <AnimatedSection>
+          <Text
+            fontFamily="Quicksand"
+            fontSize="1.5rem"
+            paddingTop="0.5rem"
+            fontWeight="bold"
+            borderBottom="1px solid #C6C6C6"
+            maxWidth="2.5rem"
+          >
+            Bio
+          </Text>
+        </AnimatedSection>
       </Container>
       <Container
         minWidth="100%"
@@ -32,23 +35,27 @@ function BioBox() {
         display="flex"
         pt="0.5rem"
       >
-        <Text
-          m="0"
-          px="0.3rem"
-          fontWeight="bold"
-          fontFamily="Quicksand"
-        >
-          1999:
-        </Text>
-        <Text
-          m="0"
-          px="0.2rem"
-          fontFamily="Quicksand"
-          fontSize="0.9rem"
-          paddingTop="0.1rem"
-        >
-          Born in London!
-        </Text>
+        <AnimatedSection>
+          <Text
+            m="0"
+            px="0.3rem"
+            fontWeight="bold"
+            fontFamily="Quicksand"
+          >
+            1999:
+          </Text>
+        </AnimatedSection>
+        <AnimatedSection>
+          <Text
+            m="0"
+            px="0.2rem"
+            fontFamily="Quicksand"
+            fontSize="0.9rem"
+            paddingTop="0.1rem"
+          >
+            Born in London!
+          </Text>
+        </AnimatedSection>
       </Container>
       <Container
         minWidth="100%"
@@ -57,48 +64,56 @@ function BioBox() {
         display="flex"
         pt="0.3rem"
       >
-        <Text
-          m="0"
-          px="0.3rem"
-          fontWeight="bold"
-          fontFamily="Quicksand"
-        >
-          2021:
-        </Text>
-        <Text
-          m="0"
-          px="0.2rem"
-          fontFamily="Quicksand"
-          fontSize="0.9rem"
-          paddingTop="0.1rem"
-        >
-          Graduated with a Master's Degree in Computer Science from the University of Portsmouth
-        </Text>
+        <AnimatedSection>
+          <Text
+            m="0"
+            px="0.3rem"
+            fontWeight="bold"
+            fontFamily="Quicksand"
+          >
+            2021:
+          </Text>
+        </AnimatedSection>
+        <AnimatedSection>
+          <Text
+            m="0"
+            px="0.2rem"
+            fontFamily="Quicksand"
+            fontSize="0.9rem"
+            paddingTop="0.1rem"
+          >
+            Graduated with a Master's Degree in Computer Science from the University of Portsmouth
+          </Text>
+        </AnimatedSection>
       </Container>
       <Container
         minWidth="100%"
         m="0"
         px="0"
-        pt='0.3rem'
+        pt="0.3rem"
         display="flex"
       >
-        <Text
-          m="0"
-          px="0.3rem"
-          fontWeight="bold"
-          fontFamily="Quicksand"
-        >
-          2021:
-        </Text>
-        <Text
-          m="0"
-          px="0.2rem"
-          fontFamily="Quicksand"
-          fontSize="0.9rem"
-          paddingTop="0.1rem"
-        >
-          Begin working with Transalis as a Junior Software Developer
-        </Text>
+        <AnimatedSection>
+          <Text
+            m="0"
+            px="0.3rem"
+            fontWeight="bold"
+            fontFamily="Quicksand"
+          >
+            2021:
+          </Text>
+        </AnimatedSection>
+        <AnimatedSection>
+          <Text
+            m="0"
+            px="0.2rem"
+            fontFamily="Quicksand"
+            fontSize="0.9rem"
+            paddingTop="0.1rem"
+          >
+            Begin working with Transalis as a Junior Software Developer
+          </Text>
+        </AnimatedSection>
       </Container>
       <Container
         minWidth="100%"
@@ -107,23 +122,27 @@ function BioBox() {
         display="flex"
         py="0.3rem"
       >
-        <Text
-          m="0"
-          px="0.3rem"
-          fontWeight="bold"
-          fontFamily="Quicksand"
-        >
-          2022:
-        </Text>
-        <Text
-          m="0"
-          px="0.2rem"
-          fontFamily="Quicksand"
-          fontSize="0.9rem"
-          paddingTop="0.1rem"
-        >
-          Promoted from Junior Software Developer role at Transalis Ltd
-        </Text>
+        <AnimatedSection>
+          <Text
+            m="0"
+            px="0.3rem"
+            fontWeight="bold"
+            fontFamily="Quicksand"
+          >
+            2022:
+          </Text>
+        </AnimatedSection>
+        <AnimatedSection>
+          <Text
+            m="0"
+            px="0.2rem"
+            fontFamily="Quicksand"
+            fontSize="0.9rem"
+            paddingTop="0.1rem"
+          >
+            Promoted from Junior Software Developer role at Transalis Ltd
+          </Text>
+        </AnimatedSection>
       </Container>
     </Container>
   );

@@ -1,8 +1,12 @@
 'use client';
 
-import { Container, Text } from '@chakra-ui/react';
-import React, { useEffect } from 'react';
-import { motion, useAnimation, useInView } from 'framer-motion';
+import {
+  chakra, Container, Heading, Text,
+} from '@chakra-ui/react';
+import React, { useEffect, useRef } from 'react';
+import {
+  isValidMotionProp, motion, useAnimation, useInView,
+} from 'framer-motion';
 import { FaRegCopyright } from 'react-icons/fa';
 import AvatarBox from './avatar-box/avatar-box';
 import BioBox from './bio-box/bio-box';
@@ -13,6 +17,13 @@ import AnimatedSection from '../../common/AnimatedSection';
 const words = "I'm a software developer based in the UK!";
 
 export function HomeView() {
+  const MotionContainer = chakra(motion.div, {
+    shouldForwardProp: isValidMotionProp,
+  });
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <Container
       maxWidth="100%"
@@ -23,6 +34,7 @@ export function HomeView() {
       {/* Intro Section */}
       <Container
         minWidth="100%"
+        minHeight="1.5rem"
         border="1px solid #9CCE7185"
         borderRadius="5px"
         shadow="base"
@@ -31,7 +43,22 @@ export function HomeView() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7, ease: 'easeInOut' }}
       >
-        <Text>{words}</Text>
+        <Text
+          ref={ref}
+          fontSize="1.2rem"
+          py="0.25rem"
+        >
+          {words.split('').map((letter, index) => (
+            <motion.span
+              key={index}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ duration: 0.2, delay: index * 0.1 }}
+            >
+              {letter}
+            </motion.span>
+          ))}
+        </Text>
       </Container>
 
       {/* Avatar Section */}

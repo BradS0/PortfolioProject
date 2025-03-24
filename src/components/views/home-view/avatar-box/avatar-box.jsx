@@ -3,13 +3,13 @@ import {
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import React from 'react';
-import { FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelopeOpen, FaLinkedin } from 'react-icons/fa';
 import { GoMarkGithub } from 'react-icons/go';
 
 // const ProfileImage = chakra(Image, {
 //   shouldForwardProp: (prop) => ['width', 'height', 'src', 'alt'].includes(prop),
 // });
-const avatarImage = '/WebsiteLogo.jpg';
+const avatarImage = '/WebsiteLogo.webp';
 
 function AvatarBox() {
   const MotionContainer = motion(Container);
@@ -108,14 +108,14 @@ function AvatarBox() {
           alignItems="center"
           variants={itemAnim}
         >
-          <FaInstagram />
-          <Link href="https://www.instagram.com/bradleyonyett_">
+          <FaEnvelopeOpen />
+          <Link href="mailto:bradsodev@gmail.com">
             <Text
               pl="0.5rem"
               fontFamily="Quicksand"
               fontSize="0.8rem"
             >
-              @bradleyonyett_
+              bradsodev@gmail.com
             </Text>
           </Link>
         </MotionContainer>

@@ -5,6 +5,7 @@ import {
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import AnimatedSection from '../../../common/AnimatedSection';
 
 function WorkBox() {
   const MotionButton = motion(Button);
@@ -20,31 +21,38 @@ function WorkBox() {
       px="1rem"
       flexDirection="column"
     >
-      <Text
-        fontFamily="Quicksand"
-        fontSize="1.5rem"
-        paddingTop="0.5rem"
-        fontWeight="bold"
-        borderBottom="1px solid #C6C6C6"
-        maxWidth="4rem"
-      >
-        Work
-      </Text>
-      <Text
-        paddingTop="0.5rem"
-        textAlign="justify"
-        fontFamily="Quicksand"
-        fontSize="0.9rem"
-      >
-         I'm a Software Developer based in Portsmouth,
-        with a passion for digital services and design.
-        Currently, I'm working under the role of Software
-        Developer for Transalis Ltd, but still I participate
-        in projects outside of day-to-day work to pursue my
-        interests and develop my skills! Since graduating
-        from Portsmouth University, I have delved more into the
-        world of frontend development and API design!
-      </Text>
+      <AnimatedSection>
+        <Text
+          fontFamily="Quicksand"
+          fontSize="1.5rem"
+          paddingTop="0.5rem"
+          fontWeight="bold"
+          borderBottom="1px solid #C6C6C6"
+          maxWidth="4rem"
+        >
+          Work
+        </Text>
+      </AnimatedSection>
+      <AnimatedSection>
+        <Text
+          paddingTop="0.5rem"
+          textAlign="justify"
+          fontFamily="Quicksand"
+          fontSize="0.9rem"
+        >
+          I'm a Software Developer based in Portsmouth,
+          with a passion for digital services and design.
+          Currently, I'm working under the role of Software
+          Developer for Transalis Ltd, but still I participate
+          in projects outside of day-to-day work to pursue my
+          interests and develop my skills! Since graduating
+          from Portsmouth University, I have delved more into the
+          world of frontend development and API design! More recently,
+          I have found myself doing more freelance web development work,
+          designing and creating websites for clients and
+          helping them achieve their creative vision.
+        </Text>
+      </AnimatedSection>
       <Container
         m="0"
         p="0"

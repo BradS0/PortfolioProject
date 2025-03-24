@@ -18,7 +18,7 @@ import ThemeToggleBtn from '../../theme-toggle-btn/theme-toggle-btn';
 function NavList() {
   return (
     <>
-      <Container display={['none', 'none', 'none', 'flex']} minWidth="105rem" m="0" paddingTop="0.4rem" paddingLeft="0">
+      <Container display={['none', 'none', 'none', 'flex']} maxW="100%" justifyContent="flex-end" m="0" paddingTop="0.4rem" paddingLeft="0">
         <Link href="/projects">
           <Button
             size="sm"
@@ -41,7 +41,7 @@ function NavList() {
             Posts
           </Button>
         </Link> */}
-        <Link href="https://github.com/BradS0/PortfolioProject">
+        <Link href="https://github.com/BradS0/">
           <Button
             size="sm"
             variant="ghost"
@@ -56,7 +56,7 @@ function NavList() {
         <Container
           m="0"
           p="0"
-          minWidth="auto"
+          maxWidth="2.5rem"
           display="flex"
           justifyContent="flexEnd"
         >

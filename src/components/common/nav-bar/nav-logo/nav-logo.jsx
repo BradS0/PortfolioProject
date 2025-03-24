@@ -12,32 +12,38 @@ import navImage from '../../../../../public/WebsiteLogo.webp';
 import 'typeface-roboto';
 
 function NavLogo() {
+  const textColor = useColorModeValue('gray.800', 'white');
   return (
-  // If you want a logo here in the future see {craftz.dog LogoBox component}
-
-    <Container display="flex" justifyContent="flex-start" maxWidth="14rem" paddingRight="0" paddingY="0" m="0">
-      <Box p="0" m="0" height="3rem" width="3rem" borderRadius="4rem" overflow="hidden">
-        <Link href="/">
-          <Image
-            src={navImage}
-            objectFit="cover"
-          />
-        </Link>
+    <Link ml="0.5rem" href="/" display="flex" alignItems="center" _hover={{ textDecoration: 'none' }}>
+      <Box
+        position="relative"
+        height="3rem"
+        width="3rem"
+        borderRadius="full"
+        overflow="hidden"
+        mr={3}
+        flexShrink={0}
+      >
+        <Image
+          src={navImage}
+          layout="fill"
+          objectFit="cover"
+          alt="Logo"
+        />
       </Box>
 
       <Text
-        color={useColorModeValue('gray.800', 'white')}
-        fontFamily="Quicksand     "
+        color={textColor}
+        fontFamily="Quicksand"
         fontWeight="bold"
-        paddingLeft="1rem"
-        paddingTop="0.8rem"
-        paddingRight="0"
-        width="8.25rem"
-        height="auto"
+        lineHeight="normal"
+        whiteSpace="nowrap"
+        overflow="hidden"
+        textOverflow="ellipsis"
       >
         Bradley Onyett
       </Text>
-    </Container>
+    </Link>
   );
 }
 

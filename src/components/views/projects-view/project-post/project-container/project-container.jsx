@@ -1,5 +1,8 @@
 import {
-  Container, Image, Text, Button, Flex,
+  Image, Text, Button, Flex,
+  Box,
+  VStack,
+  HStack,
 } from '@chakra-ui/react';
 import React from 'react';
 import NextLink from 'next/link';
@@ -7,109 +10,78 @@ import { GoMarkGithub } from 'react-icons/go';
 
 function ProjectContainer({ projectData, projectImage }) {
   return (
-    <Container
-      minWidth="100%"
+    <Box
       border="2px solid #9CCE7185"
       borderRadius="5px"
-      shadow="base"
-      textAlign="center"
-      padding="0"
-      mb="1rem"
+      boxShadow="base"
+      overflow="hidden"
+      width="100%"
+      mb="1.5rem"
     >
-      <Container
-        minWidth="100%"
-        // bg="red"
-        display="flex"
-        paddingX="0"
-        flexDirection="row"
-        justifyContent="center"
+      <Flex
+        direction={['column', 'column', 'row']}
+        align="stretch"
       >
-        <Container
-          // bg="blue"
-          textAlign="center"
-          paddingY="0"
-          paddingX="0"
-          minWidth="20%"
-          m="0.25rem"
-          borderRadius="5rem"
+        <Box
+          width={['100%', '100%', '40%']}
+          height={['300px', '400px', '300px']}
+          position="relative"
         >
           <Image
             src={projectImage}
             alt="Project Image"
-            padding="0"
-            borderRadius="2rem"
-            margin="0"
+            objectFit="cover"
             width="100%"
             height="100%"
           />
-        </Container>
-        <Container
-          // bg="green"
-          display="flex"
-          paddingY="0"
-          paddingLeft="0"
-          minWidth="70%"
-          m="0"
-          flexDirection="column"
+        </Box>
 
+        <VStack
+          width={['100%', '100%', '60%']}
+          align="stretch"
+          spacing="0"
+          p="0.5rem"
         >
-          <Container
-            m="0"
-            p="0"
-            ml="2rem"
-            width={['50%', '50%', '50%', '50%']}
+          <Box
             borderBottom="1px solid #9CCE7185"
-
+            pb="0.25rem"
+            mb="0.25rem"
           >
             <Text
-              align="left"
               fontFamily="Quicksand"
               fontSize="1.2rem"
               fontWeight="semibold"
-              paddingY="0.1rem"
             >
               {projectData.name}
             </Text>
-          </Container>
-          <Container
-            m="0"
-            pl="2rem"
-            minW="100%"
+          </Box>
 
+          <Text
+            fontFamily="Quicksand"
+            fontSize="0.9rem"
+            flexGrow="1"
+            mb="0.25rem"
           >
-            <Text
-              align="left"
-              fontFamily="Quicksand"
-              fontSize="0.9rem"
-              paddingY="0.1rem"
-            >
-              {projectData.description}
-            </Text>
-          </Container>
-          <Flex
-            pl="2rem"
-            pb="0.5rem"
-            m="0"
-          >
-            <NextLink href={projectData.html_url}>
+            {projectData.description}
+          </Text>
+
+          <HStack>
+            <NextLink href={projectData.html_url} passHref>
               <Button
                 size="sm"
+                mt={['0.5rem', '0.5rem', '0']}
                 variant="ghost"
                 bg="#9CCE7150"
-                // border="1px solid #9CCE7185"
                 leftIcon={<GoMarkGithub />}
-                marginRight="0.5rem"
-                marginTop="0.2rem"
                 fontFamily="Quicksand"
               >
                 Source
               </Button>
             </NextLink>
-          </Flex>
-
-        </Container>
-      </Container>
-    </Container>
+          </HStack>
+        </VStack>
+      </Flex>
+    </Box>
   );
 }
 

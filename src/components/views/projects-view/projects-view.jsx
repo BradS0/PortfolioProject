@@ -16,7 +16,7 @@ function ProjectsView() {
   return (
     <Container
       maxWidth="100%"
-      px={['5rem', '5rem', '12rem', '12rem']}
+      px={['2rem', '2rem', '12rem', '12rem']}
       py="1.25rem"
       m="0"
     >

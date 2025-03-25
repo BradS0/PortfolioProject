@@ -1,5 +1,5 @@
 import { extendTheme } from '@chakra-ui/react';
-import { mode, createBreakpoints } from '@chakra-ui/theme-tools';
+import { mode } from '@chakra-ui/theme-tools';
 
 const styles = {
   global: (props) => ({
@@ -10,19 +10,28 @@ const styles = {
 };
 
 const components = {
-
+  Button: {
+    baseStyle: {
+      _focus: {
+        boxShadow: 'none',
+      },
+    },
+  },
+  Link: {
+    baseStyle: {
+      _focus: {
+        boxShadow: 'none',
+      },
+    },
+  },
 };
 
-const fonts = {
-
-};
-
-const breakpoints = createBreakpoints({
+const breakpoints = {
   sm: '30em',
   md: '48em',
   lg: '62em',
   xl: '80em',
-});
+};
 
 const colors = {
   primaryColourLightMode: '#9CCE7120',
@@ -34,7 +43,6 @@ const colors = {
   secondaryColourDarkMode: '#414141',
   tertiaryColourDarkMode: '#313131',
   quaternaryColourDarkMode: '#CA3E47',
-
 };
 
 const config = {
@@ -43,6 +51,11 @@ const config = {
 };
 
 const theme = extendTheme({
-  config, styles, components, fonts, breakpoints, colors,
+  config,
+  styles,
+  components,
+  breakpoints,
+  colors,
 });
+
 export default theme;

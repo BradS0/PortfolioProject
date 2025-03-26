@@ -1,11 +1,11 @@
 'use client';
 
 import {
-  chakra, Container, Heading, Text,
+  Container, Text,
 } from '@chakra-ui/react';
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import {
-  isValidMotionProp, motion, useAnimation, useInView,
+  motion, useInView,
 } from 'framer-motion';
 import { FaRegCopyright } from 'react-icons/fa';
 import AvatarBox from './avatar-box/avatar-box';
@@ -17,9 +17,9 @@ import AnimatedSection from '../../common/AnimatedSection';
 const words = "I'm a software developer based in the UK!";
 
 export function HomeView() {
-  const MotionContainer = chakra(motion.div, {
-    shouldForwardProp: isValidMotionProp,
-  });
+  // const MotionContainer = chakra(motion.div, {
+  //   shouldForwardProp: isValidMotionProp,
+  // });
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -50,6 +50,7 @@ export function HomeView() {
         >
           {words.split('').map((letter, index) => (
             <motion.span
+              // eslint-disable-next-line react/no-array-index-key
               key={index}
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : {}}

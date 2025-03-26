@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import { ChakraProvider } from '@chakra-ui/react';
 import React, { StrictMode } from 'react';
 

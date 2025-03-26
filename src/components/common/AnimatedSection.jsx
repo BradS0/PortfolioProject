@@ -1,5 +1,5 @@
 import { motion, useAnimation } from 'framer-motion';
-import { useEffect } from 'react';
+import { React, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 function AnimatedSection({ children, threshold = 0.1 }) {

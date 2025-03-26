@@ -1,18 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
 import { Box, Container } from '@chakra-ui/react';
-import { motion, useScroll, useSpring } from 'framer-motion';
 import NavBar from '../nav-bar/nav-bar';
 
 function MainLayout({ children }) {
-  const MotionContainer = motion(Container);
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001,
-  });
-
   return (
     <Box as="main" display="inline-flex" height="100%" width="100%">
       <Head>

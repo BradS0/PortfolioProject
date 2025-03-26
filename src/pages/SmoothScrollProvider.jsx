@@ -1,7 +1,7 @@
 'use client';
 
 import Lenis from 'lenis';
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 export default function SmoothScrollProvider({ children }) {
   useEffect(() => {
@@ -22,5 +22,5 @@ export default function SmoothScrollProvider({ children }) {
     return () => lenis.destroy();
   }, []);
 
-  return <>{children}</>;
+  return { children };
 }

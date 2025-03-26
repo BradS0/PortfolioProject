@@ -13,10 +13,10 @@ function ProjectPost() {
       try {
         const response = await fetch(gitURL);
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
         setProjects(data);
       } catch (error) {
-        console.error('Error fetching GitHub repos:', error);
+        // console.error('Error fetching GitHub repos:', error);
       }
     }
 

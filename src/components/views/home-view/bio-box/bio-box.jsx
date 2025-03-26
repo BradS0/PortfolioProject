@@ -82,7 +82,7 @@ function BioBox() {
             fontSize="0.9rem"
             paddingTop="0.1rem"
           >
-            Graduated with a Master's Degree in Computer Science from the University of Portsmouth
+            Graduated with a Master&apos;s Degree in Computer Science from the University of Portsmouth
           </Text>
         </AnimatedSection>
       </Container>

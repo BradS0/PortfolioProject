@@ -40,9 +40,9 @@ function WorkBox() {
           fontFamily="Quicksand"
           fontSize="0.9rem"
         >
-          I'm a Software Developer based in Portsmouth,
+          I&apos;m a Software Developer based in Portsmouth,
           with a passion for digital services and design.
-          Currently, I'm working under the role of Software
+          Currently, I&apos;m working under the role of Software
           Developer for Transalis Ltd, but still I participate
           in projects outside of day-to-day work to pursue my
           interests and develop my skills! Since graduating

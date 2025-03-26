@@ -1,3 +1,4 @@
+import { React } from 'react';
 import PageLayout from '../components/common/layouts/page';
 import ProjectsView from '../components/views/projects-view/projects-view';
 

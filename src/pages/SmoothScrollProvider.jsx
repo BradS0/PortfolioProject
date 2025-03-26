@@ -1,7 +1,7 @@
 'use client';
 
 import Lenis from 'lenis';
-import { useEffect } from 'react';
+import { React, useEffect } from 'react';
 
 export default function SmoothScrollProvider({ children }) {
   useEffect(() => {
@@ -22,5 +22,6 @@ export default function SmoothScrollProvider({ children }) {
     return () => lenis.destroy();
   }, []);
 
-  return { children };
+  // eslint-disable-next-line react/jsx-no-useless-fragment
+  return <>{children}</>;
 }

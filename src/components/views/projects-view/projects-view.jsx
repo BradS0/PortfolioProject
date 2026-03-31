@@ -7,12 +7,18 @@ import AnimatedSection from '../../common/AnimatedSection';
 import ProjectContainer from './project-post/project-container/project-container';
 
 function ProjectsView() {
-  const websiteData = {
+  const solentClassicalWebsiteData = {
     name: 'Solent Classical Acupuncture Website',
-    description: 'A website created and hosted for a client setting up an independent acupuncture clinic.',
+    description: 'A website designed, created and hosted for a client setting up an independent acupuncture clinic.',
     html_url: 'https://www.solentclassicalacupuncture.co.uk/',
   };
-  const projectImage = '/solentWebsite.webp';
+  const HNWHPWebsite = {
+    name: 'High Net Worth Health and Performance Ltd Website',
+    description: 'A website designed, created and hosted for a client.',
+    html_url: 'https://www.highnetworthhealth.com/',
+  };
+  const solentImage = '/solentWebsite.webp';
+  const HNWHPImage = '/HNWHPImage.webp';
   return (
     <Container
       maxWidth="100%"
@@ -22,7 +28,8 @@ function ProjectsView() {
     >
       {/* Project Post Section */}
       <AnimatedSection>
-        <ProjectContainer projectData={websiteData} projectImage={projectImage} />
+        <ProjectContainer projectData={HNWHPWebsite} projectImage={HNWHPImage} />
+        <ProjectContainer projectData={solentClassicalWebsiteData} projectImage={solentImage} />
         <ProjectPost />
       </AnimatedSection>
     </Container>

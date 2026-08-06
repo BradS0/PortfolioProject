@@ -17,8 +17,14 @@ function ProjectsView() {
     description: 'A website designed, created and hosted for a client.',
     html_url: 'https://www.highnetworthhealth.com/',
   };
+  const dandeliionWebsite = {
+    name: 'Dandeliion Website',
+    description: 'A website designed, created and hosted for a client.',
+    html_url: 'https://www.dandeliion.com/',
+  };
   const solentImage = '/solentWebsite.webp';
   const HNWHPImage = '/HNWHPImage.webp';
+  const dandeliionImage = '/dandeliionImage.webp';
   return (
     <Container
       maxWidth="100%"
@@ -28,6 +34,7 @@ function ProjectsView() {
     >
       {/* Project Post Section */}
       <AnimatedSection>
+        <ProjectContainer projectData={dandeliionWebsite} projectImage={dandeliionImage} />
         <ProjectContainer projectData={HNWHPWebsite} projectImage={HNWHPImage} />
         <ProjectContainer projectData={solentClassicalWebsiteData} projectImage={solentImage} />
         <ProjectPost />
